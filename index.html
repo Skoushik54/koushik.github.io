@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koushik | Java & Spring Boot Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f8fafc;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 1rem 3rem;
+      background: linear-gradient(120deg, #0f172a, #2563eb);
+      color: white;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #ffffffcc;
+      object-fit: cover;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      box-shadow: 0 4px 15px rgba(255,255,255,0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: .5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e2e8f0;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+      color: #0f172a;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background: #2563eb;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+    }
+
+    .about, .skills, .contact { text-align: center; }
+    .about p { color: #334155; line-height: 1.7; }
+    .skills p { color: #475569; }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-left: 6px solid #2563eb;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      border-left-color: #0f172a;
+      box-shadow: 0 8px 30px rgba(37,99,235,0.25);
+    }
+
+    .project h3 {
+      color: #0f172a;
+      margin-bottom: .5rem;
+    }
+
+    .project p {
+      color: #475569;
+      font-size: .95rem;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: .8rem;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+    }
+
+    .project a:hover {
+      border-bottom: 2px solid #2563eb;
+      color: #0f172a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: white;
+      background: linear-gradient(120deg, #2563eb, #0f172a);
+      border-top: 4px solid #1e293b;
+    }
+
+    .socials a {
+      color: #2563eb;
+      margin: 0 10px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .socials a:hover { color: #0f172a; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="profile.jpg" alt="Koushik Photo" class="profile-photo">
+    <h1>👋 Hey, I'm Sambari Koushik Kumar</h1>
+    <p>Java & Spring Boot Developer | Backend Enthusiast | Hackathon Winner 🏆</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I build scalable backend systems using <strong>Java, Spring Boot, and MySQL</strong>. I love creating clean APIs and efficient architectures. Currently freelancing on <a href="https://www.fiverr.com" target="_blank" style="color:#2563eb;">Fiverr</a> while preparing to join <strong>SAP Labs</strong> after graduation.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <p>Java | Spring Boot | REST APIs | MySQL | Docker | Hibernate | Git | Microservices | Spring Security | JPA</p>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Todo REST API</h3>
+      <p>Spring Boot + MySQL CRUD app with validation, timestamps & pagination.</p>
+      <a href="https://github.com/Skoushik54/todo" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>JWT Auth Service</h3>
+      <p>Authentication & authorization with JWT tokens and Spring Security 6.</p>
+      <a href="https://github.com/Skoushik54/jwt-auth-service" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Quiz Management (Microservice)</h3>
+      <p>Microservice-based quiz system with API Gateway, Config Server, and Docker Compose orchestration.</p>
+      <a href="https://github.com/Skoushik54/Quiz_Application_microservices" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Let's collaborate or discuss a backend project!</p>
+    <p><strong>📞 Phone:</strong> +91 8639977291</p>
+    <div class="socials">
+      <a href="https://github.com/Skoushik54" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/skoushik54" target="_blank">LinkedIn</a>
+      <a href="mailto:sambari.koushik@gmail.com">Email</a>
+      <a href="https://www.fiverr.com/sambari_koushik" target="_blank">Fiverr</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Koushik | Let’s collaborate and build something great 🚀
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('header', { duration: 1000, origin: 'top', distance: '50px' });
+    ScrollReveal().reveal('.about', { duration: 1000, origin: 'left', distance: '60px' });
+    ScrollReveal().reveal('.skills', { duration: 1000, origin: 'right', distance: '60px', delay: 200 });
+    ScrollReveal().reveal('.project', { duration: 1000, interval: 200, origin: 'bottom', distance: '80px' });
+    ScrollReveal().reveal('.contact', { duration: 1000, origin: 'top', distance: '50px' });
+  </script>
+
+</body>
+</html>
